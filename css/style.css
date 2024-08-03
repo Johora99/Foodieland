@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap');
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.lobster-regular{
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+:root{
+    --black-primary:rgba(0, 0, 0, 1);
+    --black-light:rgba(0, 0, 0, 0.6);
+    --black-lighter:rgba(0, 0, 0, 0.1);
+    --white-primary:rgba(255, 255, 255, 1);
+    --blue-light:rgba(231, 250, 254, 1);
+
+}
+/* common style start */
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+a{
+ text-decoration: none;
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+/* common style end */
+
+/* header start */
+/* nav start */
+header nav{
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+.nav-logo{
+    font-size: 1.5rem;
+}
+.nav-items{
+    gap: 2rem;
+}
+.nav-items .nav-item .nav-link{
+    color: var(--black-primary);
+    font-size: 1rem;
+}
+hr.fast-hr{
+  color: var(--black-lighter);
+  opacity: 0.1;
+  
+}
+
+
+
+
+
+
+
+/* nav end */
+
+
+
+/* header end */
