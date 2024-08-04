@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .inter-font{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -14,11 +19,13 @@
     --black-primary:rgba(0, 0, 0, 1);
     --black-light:rgba(0, 0, 0, 0.6);
     --black-lighter:rgba(0, 0, 0, 0.1);
+    --gray-light:rgba(0, 0, 0, 0.05);
     --white-primary:rgba(255, 255, 255, 1);
     --blue-light:rgba(231, 250, 254, 1);
 
 }
 /* common style start */
+
 .d-flex{
     display: flex;
     align-items: center;
@@ -34,9 +41,17 @@ a{
     width: 100%;
     margin: auto;
 }
+.sub-container{
+    width: 90%;
+    margin: auto;
+}
+.content{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black-light);
+    line-height: 1.5rem;
 
-
-
+}
 
 
 
@@ -49,14 +64,19 @@ a{
 /* nav start */
 header nav{
     width: 90%;
-    margin: auto;
+    margin: 2rem auto;
     justify-content: space-between;
+     flex-wrap: wrap; 
 }
+    
+
 .nav-logo{
     font-size: 1.5rem;
 }
 .nav-items{
     gap: 2rem;
+     flex-wrap: wrap; 
+    
 }
 .nav-items .nav-item .nav-link{
     color: var(--black-primary);
@@ -69,13 +89,90 @@ hr.fast-hr{
 }
 
 
-
-
-
-
-
 /* nav end */
+/* banner start */
+header .banner{
+  margin-top: 2rem;
+  max-height: 640px;
+  overflow: hidden;
+}
+header .banner .banner-left{
+    background-color: var(--blue-light);
+    padding: 3rem;
+    border-radius: 5rem 0rem 0rem 5rem;
+} 
+.hot-logo{
+    width: fit-content;
+    gap: 1rem;
+    background-color: var(--white-primary);
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+}
+.hot-logo-title{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--black-primary);
+}
+.banner-content-title{
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 1.5rem 0rem;
 
+}
+.cooking{
+    gap: 1rem;
+    margin: 2rem 0rem 5rem;
+}
+.cooking .pop{
+     width: fit-content;
+    gap: 1rem;
+    background-color: var(--gray-light);
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+
+}
+.pop-title{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--black-light);
+}
+.person{
+    gap: 1rem;
+    align-items: center;
+}
+.person-name .person-name-title{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.banner-last{
+    justify-content: space-between;
+}
+.btn-1{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--white-primary);
+    border-radius: 1rem;
+    background-color: var(--black-primary);
+    padding: 1rem 2rem;
+    gap: 1rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* banner end */
 
 
 /* header end */
