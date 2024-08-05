@@ -67,11 +67,73 @@ header .banner .banner-left{
 
  .products {
   flex-direction: column;
- gap: 10rem;
- margin-bottom: 0rem !important;
-  
+  gap: 10rem;
+  margin-bottom: 5rem;
  }
  .products .food{
   margin-bottom: 0rem;
  }
+ .card-section{
+    grid-template-columns: repeat(1 , 1fr);
+
+}
+.chef .sub-chef{
+  flex-direction: column;
+  
+}
+.chef-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sub-food-card img{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.check-content{
+    margin-top: 10rem;
+}
+.check-content .sub-check-content .content{
+    margin: 2rem 0rem 10rem;
+}
+.s-card{
+    display: grid;
+    grid-template-columns: repeat(1 ,1fr);
+    grid-gap: 2rem;
+}
+.s-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.recipe-content{
+    display: grid;
+    grid-template-columns: repeat(1 ,1fr);
+    margin-bottom: 5rem;
+
+}
+.recipe-card{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    gap: 3rem;
+
+}
+.inbox .sub-inbox{
+    height:auto;
+    overflow: hidden;
+}
+.sub-inbox{
+  padding: 2rem;
+}
+.sub-inbox img{
+ display: none;
+
+}
+.mail-box{
+  width: 90%;
+}
+br{
+  display: none;
+}
 }

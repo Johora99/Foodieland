@@ -59,7 +59,7 @@ a{
     color: var(--white-primary);
     border-radius: 1rem;
     background-color: var(--black-primary);
-    padding: 1rem 2rem;
+    padding: 1.2rem 2rem;
     gap: 1rem;
     border: none;
     
@@ -159,6 +159,9 @@ header .banner .banner-left{
     font-size: 1rem;
     font-weight: 700;
 }
+.fa-circle-play{
+    font-size: 1.3rem;
+}
 .banner-last{
     justify-content: space-between;
 }
@@ -255,17 +258,136 @@ main{
 .Recipes .sub-recipes .h2-title{
     margin-bottom: 1.5rem;
 }
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 3rem;
+    margin-top: 5rem;
 
+}
+.card{
+    background-color: var(--blue-light);
+    padding: 2rem;
+    border-radius: 1.125rem;
+}
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+.card-title{
+    font-size:1.5rem ;
+    font-weight: 600;
+    color: var(--black-primary);
+    margin: 2rem 0rem;
+}
 
-
-
-
-
-
-
+.cooking-2,.pop-2{
+    gap: 1rem;
+}
 
 /* recipes end */
 
+/* chef start */
+.chef{
+    margin-top: 10rem;
+    
+}
+.chef .sub-chef{
+    gap: 5rem;
+}
+.sub-chef-content{
+    margin: 2rem 0rem 5rem;
+}
+.sub-chef .btn-1{
+    padding: 1.2rem 3rem;
+}
+
+/* chef end */
+/* check out start */
+.check-content{
+    margin-top: 10rem;
+}
+.check-content .sub-check-content{
+    text-align: center;
+}
+.check-content .sub-check-content .content{
+    margin: 2rem 10rem 10rem;
+}
+.s-card{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+}
+.post{
+    background-image: linear-gradient(rgba(255 , 255 ,255 ,1) ,rgba(231, 250, 254, 1));
+    padding: 5rem;
+}
+.btn{
+    text-align: center;
+    margin-top: 4rem;
+    justify-content: center;
+}
+.fa-instagram{
+    font-size: 1.3rem;
+}
+
+/* check out end */
+/* recipe start */
+.recipe{
+    margin-top: 10rem;
+}
+.recipe-content{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    margin-bottom: 5rem;
+
+}
+.recipe-card{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 3rem;
+
+}
+/* recipe end */
+
+/* inbox start */
+.inbox{
+    margin-top: 10rem;
+}
+.inbox .sub-inbox{
+    background-color: var(--blue-light);
+    text-align: center;
+    position: relative;
+    height: 440px;
+    overflow: hidden;
+}
+.sub-inbox .h2-title{
+    margin: 5rem 0rem 2rem;
+}
+.sub-inbox img{
+    position: absolute;
+}
+.img-1{
+    top: 43%;
+    left: 0%;
+}
+.img-2{
+    top: 45%;
+    right: 0%;
+}
+.mail-box{
+   justify-content: space-between;
+    background-color: var(--white-primary);
+    width: 40%;
+    margin: 5rem auto;
+    padding:0.5rem 0.5rem 0.5rem 2rem;
+    border-radius: 1.5rem;
+}
+.mail-box input{
+   border: none;
+   color: var(--white-primary);
+   opacity: 0.4;
+
+}
 
 
 
@@ -274,6 +396,10 @@ main{
 
 
 
+
+
+
+/* inbox end */
 
 
 /* main end */
