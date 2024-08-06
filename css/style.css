@@ -23,6 +23,7 @@
     --gray-lighter:rgba(0, 0, 0, 0.3);
     --white-primary:rgba(255, 255, 255, 1);
     --blue-light:rgba(231, 250, 254, 1);
+    --tomato:rgba(255, 121, 103, 1);
 
 }
 /* common style start */
@@ -70,7 +71,9 @@ a{
     color: var(--black-primary);
  }
 
-
+.fa-solid{
+    font-size: 1.5rem;
+}
 
 
 /* common style end */
@@ -92,12 +95,11 @@ header nav{
     gap: 2rem;
      flex-wrap: wrap; 
     
-}
-.nav-items .nav-item .nav-link{
+} .nav-link{
     color: var(--black-primary);
     font-size: 1rem;
 }
-hr.fast-hr{
+hr{
   color: var(--black-lighter);
   opacity: 0.1;
   
@@ -269,6 +271,7 @@ main{
     background-color: var(--blue-light);
     padding: 2rem;
     border-radius: 1.125rem;
+    position: relative;
 }
 .card img{
     width: 100%;
@@ -283,6 +286,24 @@ main{
 
 .cooking-2,.pop-2{
     gap: 1rem;
+}
+.love-1{
+    width: 48px;
+    height: 48px;
+    background-color: var(--white-primary);
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 70%;
+
+}
+.fa-heart{
+    font-size: 1.5rem;
+    color: var(--tomato);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
 
 /* recipes end */
@@ -347,6 +368,19 @@ main{
     gap: 3rem;
 
 }
+.sub-food-card{
+    position: relative;
+}
+.love{
+    width: 48px;
+    height: 48px;
+    background-color: var(--white-primary);
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 76%;
+
+}
 /* recipe end */
 
 /* inbox start */
@@ -354,52 +388,55 @@ main{
     margin-top: 10rem;
 }
 .inbox .sub-inbox{
-    background-color: var(--blue-light);
+    background: url("../assets/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543\ 1.png") , url("../assets/Photo.png") , var(--blue-light);
+    background-repeat: no-repeat;
+    background-position: left bottom , right bottom;
     text-align: center;
-    position: relative;
-    height: 440px;
-    overflow: hidden;
+    padding: 3rem 2rem;
+    border-radius: 3.8rem;
 }
 .sub-inbox .h2-title{
     margin: 5rem 0rem 2rem;
 }
-.sub-inbox img{
-    position: absolute;
-}
-.img-1{
-    top: 43%;
-    left: 0%;
-}
-.img-2{
-    top: 45%;
-    right: 0%;
-}
+
+
 .mail-box{
    justify-content: space-between;
     background-color: var(--white-primary);
     width: 40%;
     margin: 5rem auto;
-    padding:0.5rem 0.5rem 0.5rem 2rem;
+    padding: 0.5rem;
     border-radius: 1.5rem;
 }
 .mail-box input{
    border: none;
    color: var(--white-primary);
    opacity: 0.4;
+     padding: 1rem 2rem;
+      border-radius: 1.5rem;
+      width: 100%;
 
 }
-
-
-
-
-
-
-
-
-
-
-
 /* inbox end */
 
 
 /* main end */
+/* footer start */
+.sub-footer-1{
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.nav-logo-section .content{
+    margin-top: 1rem;
+}
+.sub-footer-2{
+    margin: 2rem auto;
+    justify-content: space-between;
+}
+
+span{
+    color: var(--tomato);
+}
+
+
+/* footer end */

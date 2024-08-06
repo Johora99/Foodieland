@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header start */
+/* recipe banner start */
+.recipe-banner{
+    justify-content: space-between;
+    align-items: center;
+}
+.sub-recipe-banner .banner-content-title{
+    margin: 3rem auto;
+}
+.recipe-banner-items{
+    flex-wrap: wrap;
+   justify-content: space-between;
+}
+.parson-name-title-2{
+    font-size: 0.8rem;
+    font-weight: 500;
+
+}
+.person-name-title,.parson-name-title-2{
+    margin-bottom: 0.5rem;
+}
+.fa-solid{
+    font-size: 1.5rem;
+}
+.recipe-banner-link{
+    gap: 2rem;
+}
+.print,.share{
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--blue-light);
+    border-radius: 50%;
+    position: relative;
+}
+.fa-print,.fa-arrow-up-from-bracket{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.banner-img-section{
+    margin: 4rem auto;
+    justify-content: space-between;
+    height: 600px;
+    gap: 2rem;
+}
+
+.info{
+    height: 100%;
+    background-color: var(--blue-light);
+    border-radius: 1.9rem;
+    padding: 2rem;
+   
+}
+.info-item{
+    justify-content: space-between;
+    border-bottom: 1px solid var(--black-lighter);
+    margin: 1rem auto;
+    padding-bottom: 0.5rem;
+}
+.food-amount{
+    font-size: 1.125rem ;
+    font-weight: 500;
+}
+.sub-content{
+    text-align: center;
+    margin-top: 6rem;
+}
+.banner-last-content{
+    margin-bottom: 5rem;
+}
+/* recipe banner end */
+/* header end */
+
+
+
+
+
+
+
+
