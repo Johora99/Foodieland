@@ -21,6 +21,7 @@
     --black-lighter:rgba(0, 0, 0, 0.1);
     --gray-light:rgba(0, 0, 0, 0.05);
     --gray-lighter:rgba(0, 0, 0, 0.3);
+    --gray-primary:rgba(219, 226, 229, 1);
     --white-primary:rgba(255, 255, 255, 1);
     --blue-light:rgba(231, 250, 254, 1);
     --tomato:rgba(255, 121, 103, 1);
@@ -157,7 +158,7 @@ header .banner .banner-left{
     gap: 1rem;
     align-items: center;
 }
-.person-name .person-name-title{
+.person-name-title{
     font-size: 1rem;
     font-weight: 700;
 }
@@ -422,6 +423,9 @@ main{
 
 /* main end */
 /* footer start */
+footer{
+    padding-top: 5rem;
+}
 .sub-footer-1{
     justify-content: space-between;
     margin-bottom: 2rem;

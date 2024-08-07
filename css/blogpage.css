@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header start */
+
+/* blog page banner start */
+.blog-page-banner{
+    text-align: center;
+   margin: 5rem auto;
+}
+.person{
+    justify-content: center;
+    gap: 1rem;
+}
+.person-name{
+    gap: 3rem;
+}
+.blog-page-banner .content{
+    margin: 3rem;
+}
+
+
+/* blog page banner end */
+
+
+/* header end */
+/* main start */
+
+/* my thought start */
+.muthoughts{
+    width: 90%;
+    margin: auto;
+     align-items: flex-start;
+      gap: 5rem;
+}
+.thought-banner{
+     margin: 3rem auto;
+    border-top: 1px solid var(--black-lighter);
+    border-bottom: 2px solid var(--black-lighter);
+    background-image: linear-gradient(to right top ,rgba(0, 0, 0, 0.1) , rgba(255 ,255 , 255 , 1));
+  
+}
+.thought-banner-title{
+    font-size: 2.25rem ;
+    font-weight: 500;
+    font-style: italic;
+      padding: 3rem;
+   
+}
+.thought-img{
+    margin-bottom: 2rem;
+}
+.s-media{
+    margin-top: 2rem;
+    width: 20%;
+}
+.s-title{
+    font-size: 0.9rem;
+    font-weight: 600;
+
+}
+.s-items{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* my thought end */
+
+/* recipe start */
+
+.ingredients-title{
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--black-primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* recipe end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main end */

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header start */
+
+/* blog-write start */
+.blog-write{
+    text-align: center;
+    margin-top: 5rem;
+    padding: 1rem;
+}
+.sub-mail-box {
+    border: 1px solid var(--black-lighter);
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+}
+
+.sub-container{
+    justify-content: flex-start;
+}
+
+/* blog-write end */
+
+/* header end */
+/* main start */
+
+/* food list star */
+.sub-container{
+    gap: 2rem;
+    align-items: flex-start;
+}
+.food-item-1{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+.card-title{
+    margin: 0rem 0rem 1rem;
+}
+.chef-1{
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.sub-chef-1{
+    gap: 1rem;
+}
+.ingredients-title{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--black-primary);
+}
+.item-title{
+    font-size: 1.25rem;
+    font-weight: 600 ;
+    color: var(--black-primary);
+}
+.item-1{
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.item-title{
+    margin-bottom: 1rem;
+}
+.ads-img{
+    margin-top: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* food list end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main end */
