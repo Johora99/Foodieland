@@ -273,6 +273,22 @@ header .banner .banner-left{
     width: fit-content;
 }
 
-/* recipe section end */
+.sub-contact {
+  flex-direction: column;
+}
+.contact-form .banner-content-title{
+   margin: 1.5rem 0rem 3rem;
+}
+.contact-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 3rem;
+}
+.form{
+  flex-direction: column;
+  gap: 0;
+}
+
 
 }

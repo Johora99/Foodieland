@@ -66,6 +66,26 @@
 .ads-img{
     margin-top: 3rem;
 }
+/* pagination start */
+.sub-pagination ul{
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.pagination-list{
+     background-color: var(--black-primary);
+     width: 4rem;
+     height: 4rem;
+     border-radius: 1rem;
+}
+.pagination-list a{
+    color: var(--white-primary);
+    font-size: 1.125rem ;
+    font-weight: 700;
+    margin: auto;
+   
+}
 
 
 
@@ -76,9 +96,7 @@
 
 
 
-
-
-
+/* pagination end */
 
 
 
@@ -89,18 +107,5 @@
 
 
 /* food list end*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* main end */
