@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .inter-font{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -28,7 +29,6 @@
 
 }
 /* common style start */
-
 .d-flex{
     display: flex;
     align-items: center;
@@ -64,7 +64,30 @@ a{
     padding: 1.2rem 2rem;
     gap: 1rem;
     border: none;
+    cursor: pointer;
+    position: relative;
+    border: 3px solid var(--black-primary);
+    transition: all 0.5s ease;
     
+}
+.btn-1::after{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: var(--black-primary);
+    z-index: -1;
+    border: 3px solid var(--black-primary);
+    background-clip: padding-box;
+    border-radius: 1rem;
+
+}
+.btn-1:hover{
+    background: white;
+    color: var(--black-primary);
+
 }
  .h2-title{
     font-size: 3rem;
@@ -100,6 +123,28 @@ header nav{
     color: var(--black-primary);
     font-size: 1rem;
 }
+
+.nav-option .nav-items .nav-item .nav-link:hover{
+   text-shadow: 0px 0px 2px rgba(0,0,0,0.6);
+   transition: all 0.5s ease;
+}
+ .nav-hover .nav-item:nth-child(1) .nav-link:hover{
+ color: rgb(24, 119, 242);
+   transition: all 0.5s ease;
+}
+.nav-hover .nav-item:nth-child(2) .nav-link:hover{
+ color: rgb(29 ,161 ,242);
+   transition: all 0.5s ease;
+}
+.nav-hover .nav-item:nth-child(3) .nav-link:hover{
+   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+    transition: all 0.5s ease;
+}
+
 hr{
   color: var(--black-lighter);
   opacity: 0.1;
@@ -114,6 +159,7 @@ header .banner{
   max-height: 640px;
   overflow: hidden;
 }
+
 header .banner .banner-left{
     background-color: var(--blue-light);
     padding: 3rem;
@@ -186,21 +232,52 @@ main{
 .categories .container-heading .btn-1{
     background-color: var(--blue-light);
     color: var(--black-primary);
+    border: 3px solid var(--blue-light);
+
+}
+.categories .container-heading .btn-1::after{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: var(--blue-light);
+    z-index: -1;
+    border: 3px solid var(--blue-light);
+    background-clip: padding-box;
+    border-radius: 1rem;
+
+}
+.categories .container-heading .btn-1:hover{
+    background: white;
+    color: var(--black-primary);
+
 }
 .products{
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 10rem auto 0rem;
+    perspective: 1000px;
+    transform-style: preserve-3d;
 }
 .food{
     position: relative;
      margin-bottom: 10rem;
+     transition: all 0.5s ease;
+
 }
+.food:hover{
+    transform: translateZ(60px);
+
+}
+
 .food img{
     position: absolute;
     top: -15%;
     left: 50%;
     transform: translate(-50% , -50%);
+    transition: all 0.5s ease;
 }
 .food-title{
     font-size: 1.125rem;
@@ -209,14 +286,15 @@ main{
     margin-top: 2rem;
     text-align: center;
 }
+
 .products .food:nth-child(n){
     width: 180px;
    padding: 2rem;
    border-radius: 0rem 0rem 2rem 2rem;
   box-shadow: 0px 5px 5px var(--gray-lighter);
-
     
 }
+
 .products .food:nth-child(1){
  background-image: linear-gradient(to top, rgba(112, 130, 70, 0.12) ,transparent);
 }
@@ -261,11 +339,19 @@ main{
 .Recipes .sub-recipes .h2-title{
     margin-bottom: 1.5rem;
 }
+.ingredients-title{
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--black-primary);
+    margin-bottom: 3rem;
+}
 .card-section{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     grid-gap: 3rem;
     margin-top: 5rem;
+    perspective: 1000px;
+    transform-style: preserve-3d;
 
 }
 .card{
@@ -273,6 +359,15 @@ main{
     padding: 2rem;
     border-radius: 1.125rem;
     position: relative;
+    transition: all 0.5s ease;
+}
+.card:hover{
+    transform: translateZ(30px);
+    background-color: rgb(27, 148, 172);
+}
+.card:hover h3{
+    color: white;
+    transition: all 0.6s ease;
 }
 .card img{
     width: 100%;
@@ -310,6 +405,7 @@ main{
 /* recipes end */
 
 /* chef start */
+
 .chef{
     margin-top: 10rem;
     
@@ -322,6 +418,8 @@ main{
 }
 .sub-chef .btn-1{
     padding: 1.2rem 3rem;
+
+    
 }
 
 /* chef end */
@@ -338,6 +436,14 @@ main{
 .s-card{
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.s-card img{
+    transition: all 0.5s ease;
+}
+.s-card img:hover{
+    transform: translateZ(30px);
 }
 .post{
     background-image: linear-gradient(rgba(255 , 255 ,255 ,1) ,rgba(231, 250, 254, 1));
@@ -362,15 +468,26 @@ main{
     grid-template-columns: repeat(2 ,1fr);
     margin-bottom: 5rem;
 
+
 }
+
 .recipe-card{
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
     gap: 3rem;
 
 }
+.food-card{
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
 .sub-food-card{
     position: relative;
+    transition: all 0.5s ease;
+}
+.sub-food-card:hover{
+       transform: translateZ(50px);
+    
 }
 .love{
     width: 48px;
@@ -440,6 +557,10 @@ footer{
 
 span{
     color: var(--tomato);
+}
+.footer-link .nav-items .nav-item .nav-link:hover{
+   text-shadow: 0px 0px 2px rgba(0,0,0,0.6);
+   transition: all 0.5s ease;
 }
 
 
